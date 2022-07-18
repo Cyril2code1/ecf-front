@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/favicon.ico" />
+    <title>Charles Cantin</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <i class="fas fa-bars"></i>
+        <div class="menu">
+            <div class="navbar-list">
+                <a href="./index.html">Accueil</a>
+                <a href="#" id="galleries">Galeries</a>
+                <a href="#" id="benefits">Prestations et Tarifs</a>
+                <a href="#" id="contact">Contact</a>
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accueil">
+        <h1>Charles Cantin - Photographe</h1>
+    </div>
+
+    <div class="galleries">
+        <img src="./img/brand.png" alt="logo" height="150px">
+        <div class="btn-categories">
+        </div>
+        <div class="photos">
+        </div>
+    </div>
+
+    <div class="benefits">
+        <img src="./img/brand.png" alt="logo" height="150px">        
+    </div>
+
+    <div class="contact">
+
+        <img src="./img/brand.png" alt="logo" height="150px">
+
+        <form action="https://formspree.io/f/xnqwkrzg" method="POST">
+            <fieldset>
+                <legend>                  
+                        Formulaire de contact
+                </legend>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="votre adresse mail" required>
+               
+                <label for="message">Message:</label>
+                <textarea rows="10" cols="40" minlength="30" id="message" name="message" placeholder="votre message" required></textarea>
+                
+                <button type="submit">Envoyer</button>              
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/categories.js"></script>
+</body>
+</html>

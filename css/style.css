@@ -1,0 +1,226 @@
+:root {
+    --font_logo: 'Nova Mono', monospace;
+    --font_title_subtitle: 'Libre Baskerville', serif;
+    --font_main: 'Tinos', serif;
+    --background-image: url(./../img/background1.jpg);
+    --color1: #EEEEEE;
+    --color2: #47555E;
+    --color3: #ffd700;
+    --color4: #c0c0c0;
+    --color5: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font_main);
+    color: var(--color4);
+}
+
+
+.navbar i{
+    position: fixed;
+    top: 3.5rem;
+    right: 3.5rem;
+    font-size: 3rem;
+    color: var(--color1);
+    z-index: 900;
+}
+
+.menu, .galleries, .benefits, .contact {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transition: top 0.8s;
+}
+
+.menu {
+    background-color: var(--color4);
+    top: -100vh;
+    opacity: 0.9;
+    z-index: 800;
+}
+
+.galleries, .benefits, .contact {
+    padding-top: 5rem; 
+    background-color: var(--color2); 
+    top: 200vh; 
+    opacity: 1;
+    overflow: auto;
+}
+
+.popin-menu, .popin-galleries, .popin-benefits, .popin-contact {
+    top: 0;
+}
+
+.navbar .navbar-list, .benefits, .galleries, .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .navbar-list {
+    height: 100vh;
+    justify-content: center;
+}
+
+.navbar .navbar-list a {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--color2);
+    padding: 1rem;
+}
+
+
+.accueil {
+    display: flex;
+    height: 100vh;
+    background-color: var(--color2);
+    background-image: var(--background-image);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--font_logo);
+    color: var(--color1);
+    text-shadow: 1px 1px 2px var(--color3), 0 0 1em var(--color2), 0 0 0.2em var(--color2);
+    text-align: center;
+}
+
+.benefits .row {
+    display: flex;
+    border: 1px solid var(--color3);
+    border-radius: 2rem;
+    margin: 0.2rem;
+    width: 80%;
+}
+
+.benefit-title {
+    flex: 33%;
+    font-size: 1.6rem;
+    font-family: var(--font_title_subtitle);
+    font-weight: 800;
+    text-align: center;
+}
+
+.benefit-desc {
+    flex: 57%;
+}
+
+.benefit-price {
+    flex: 10%;
+    font-family: var(--font_title_subtitle);
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.benefits>div {
+    color: var(--color1);
+    padding: 1rem;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 1.2rem;
+    background-color: var(--color1);
+    font-size: 1.5rem;
+    border: 1px solid var(--color3);
+}
+
+button:hover {
+    background-color: var(--color3);
+    box-shadow:inset 0 0 3rem var(--color5);
+    color: var(--color1);
+}
+
+button:active {
+    background-color: var(--color1);
+    box-shadow:inset 0 0 3rem var(--color5);
+    color: var(--color3);
+}
+
+.photos {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+}
+
+figure {
+    display: inline-block;
+    width: 24rem;
+    color: var(--color1);
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    border: 0.5rem double var(--color3);
+    border-radius: 2rem;
+}
+
+figcaption {
+    font-family: var(--font_title_subtitle);
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    font-family: var(--font_main);
+    font-size: 2.4rem;
+    color: var(--color1);
+}
+
+fieldset {
+    border: 0.5rem double var(--color3);
+    padding: 0 2rem 2rem 2rem;
+    margin-bottom:10px;
+}
+
+legend {
+    font-family: var(--font_title_subtitle);
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding: 0.7rem; 
+}
+
+
+label {
+    display: block;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+input {
+    width: 25rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
